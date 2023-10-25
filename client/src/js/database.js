@@ -19,7 +19,7 @@ const jateDb = await openDB('jate', 1);
   const store = tx.objectStore('jate');
   const request = store.put({ content });
   const result = await request;
-  console.log('🚀 - data saved to the database', result);
+  console.log(result.value)
 }
 
 // TODO: Add logic for a method that gets all the content from the database
